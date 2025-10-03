@@ -10,51 +10,45 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Gal_Gadot_for_Revlon.png"
   },
   {
-    "id": 2,
     "name": "Ariana Grande",
     "country": "United States",
     "field": "Music & Activism",
-    "description": "Singer, songwriter, and actress known for her pop music and advocacy for mental health awareness",
-    "website": "https://en.wikipedia.org/wiki/Ariana_Grande"
+    "href": "https://en.wikipedia.org/wiki/Ariana_Grande",
+    "image": "./images/Ariana_Grande.jpg"
   },
   {
-    "id": 3,
     "name": "Emma Watson",
     "country": "United Kingdom",
     "field": "Acting & Activism",
-    "description": "Actress known for her role as Hermione Granger in the Harry Potter series and advocacy for gender equality",
-    "website": "https://en.wikipedia.org/wiki/Emma_Watson"
+    "href": "https://en.wikipedia.org/wiki/Emma_Watson",
+    "image": "./images/Emma_Watson.jpg"
   },
   {
-    "id": 4,
     "name": "Zendaya",
     "country": "United States",
     "field": "Acting & Activism",
-    "description": "Actress, singer, and model known for her role as Rue in Euphoria and advocacy for diversity and inclusion",
-    "website": "https://en.wikipedia.org/wiki/Zendaya"
+    "href": "https://en.wikipedia.org/wiki/Zendaya",
+    "image": "./images/Zendaya.jpg"
   },
   {
-    "id": 5,
     "name": "Priyanka Chopra",
     "country": "India",
     "field": "Acting & Activism",
-    "description": "Actress, producer, and entrepreneur known for her roles in Bollywood and Hollywood and advocacy for gender equality",
-    "website": "https://en.wikipedia.org/wiki/Priyanka_Chopra"
+    "href": "https://en.wikipedia.org/wiki/Priyanka_Chopra",
+    "image": "./images/Priyanka_Chopra.jpg"
   },
   {
-    "id": 6,
     "name": "Emma Stone",
     "country": "United States",
     "field": "Acting & Activism",
-    "description": "Actress known for her roles in La La Land and The Help and advocacy for mental health awareness",
-    "website": "https://en.wikipedia.org/wiki/Emma_Stone"
+    "href": "https://en.wikipedia.org/wiki/Emma_Stone",
+    "image": "./images/Emma_Stone.jpg"
   },
   {
-    "id": 7,
     "name": "Natalie Portman",
     "country": "United States",
     "field": "Acting & Activism",
-    "description": "Actress known for her roles in Black Swan and Jackie and advocacy for gender equality",
-    "website": "https://en.wikipedia.org/wiki/Natalie_Portman"
+    "href": "https://en.wikipedia.org/wiki/Natalie_Portman",
+    "image": "./images/Natalie_Portman.jpg"
   }
 ]
