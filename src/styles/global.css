@@ -1,2 +1,32 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: halloween;
+}
+
+@theme {
+  /* Map Tailwind v4 design tokens to DaisyUI theme variables */
+  --color-background: var(--b1);
+  --color-foreground: var(--bc);
+  --color-border: var(--b2);
+  --color-ring: var(--p);
+
+  --color-primary: var(--p);
+  --color-primary-foreground: var(--pc);
+  --color-secondary: var(--s);
+  --color-secondary-foreground: var(--sc);
+  --color-accent: var(--a);
+  --color-accent-foreground: var(--ac);
+  --color-muted: var(--n);
+  --color-muted-foreground: var(--nc);
+  --color-destructive: var(--er);
+  --color-destructive-foreground: var(--erc);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
