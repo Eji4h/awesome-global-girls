@@ -5,6 +5,8 @@
 
 A curated list of inspiring women from around the world making a difference in their fields. Built with Astro for Hacktoberfest 2025! 🎃
 
+🌐 ** Website**: [awesome-global-girls.com](https://awesome-global-girls.com)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -83,6 +85,7 @@ git commit -m "Add [Name] to the list"
 - Include a reliable source link (link) - Wikipedia, official site, or credible source
 - Add an image URL (preferably from Wikimedia Commons or other free sources)
 - Ensure the JSON is properly formatted
+- Ensure sort name is in alphabetical order
 - Image should be a direct link to the image file (jpg, png, webp)
 
 ## 🛠️ Built With
