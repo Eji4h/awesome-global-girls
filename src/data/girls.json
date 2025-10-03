@@ -14,6 +14,20 @@
     "image": "/images/Ariana_Grande.jpg"
   },
   {
+    "name": "Baek Ji-heon (백지헌)",
+    "country": "South Korea",
+    "field": "Music",
+    "link": "https://fromis9.fandom.com/wiki/Jiheon",
+    "image": "/images/Baek_Ji-heon.jpg"
+  },
+  {
+    "name": "Choi Ye-na (최예나)",
+    "country": "South Korea",
+    "field": "Acting & Activism",
+    "link": "https://x.com/YENA_OFFICIAL",
+    "image": "/images/Yena.jpg"
+  },
+  {
     "name": "Emily Ratajkowski",
     "country": "United States",
     "field": "Model & Activism",
