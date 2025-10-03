@@ -1,0 +1,66 @@
+---
+description: Guidelines for Hacktoberfest 2025 contributions to this project
+---
+
+# Hacktoberfest 2025 Contribution Guidelines
+
+## How to Contribute
+
+This project is designed for Hacktoberfest 2025 contributions. Here's how to add inspiring women to the list:
+
+### Getting Started
+
+1. Fork the repository
+2. Add new entries to [src/data/girls.json](mdc:src/data/girls.json)
+3. Optionally add images to `/public/images/`
+4. Submit a pull request
+
+### What to Add
+
+- **Inspiring Women**: Add women who have made significant contributions in their fields
+- **Diverse Representation**: Include women from different countries, cultures, and fields
+- **Verified Information**: Ensure all information is accurate and properly sourced
+
+### Contribution Categories
+
+- **Acting & Entertainment**: Actresses, directors, producers
+- **Science & Technology**: Scientists, engineers, researchers
+- **Business & Leadership**: CEOs, entrepreneurs, leaders
+- **Arts & Culture**: Artists, writers, musicians
+- **Sports & Athletics**: Athletes, coaches, sports figures
+- **Activism & Social Change**: Activists, advocates, change-makers
+
+### Quality Standards
+
+- Include complete information (name, country, field, reference)
+- Use high-quality, appropriate images
+- Ensure diversity and inclusion
+- Follow the existing data structure format
+- Test the search functionality with new entries
+
+### Pull Request Guidelines
+
+- Clear, descriptive commit messages
+- Test your changes locally
+- Ensure the search feature works with new entries
+- Follow the project's coding standards
+- Include a brief description of the person being added
+
+### Current Project Status
+
+- **Total Entries**: 13 inspiring women
+- **Countries Represented**: United States, United Kingdom, Israel, India
+- **Fields Covered**: Acting & Activism, Music & Activism, Model & Activism
+- **Search Feature**: Fully functional with real-time filtering
+
+### Recognition
+
+Contributors will be recognized in the project's README and commit history. This is a community effort to celebrate inspiring women worldwide!
+
+### Development Setup
+
+- **Framework**: Astro 5.14.1
+- **Styling**: Tailwind CSS + DaisyUI
+- **Package Manager**: pnpm
+- **Linting**: ESLint with TypeScript support
+- **Scripts**: `pnpm dev`, `pnpm build`, `pnpm lint`

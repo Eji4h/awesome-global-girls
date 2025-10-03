@@ -1,0 +1,52 @@
+---
+globs: *.astro,*.ts,*.js
+---
+
+# Astro Development Guidelines
+
+## Astro Component Best Practices
+
+- Use proper TypeScript types for component props
+- Keep client-side scripts minimal and focused
+- Use Astro's built-in Image component for optimized images
+- Prefer server-side rendering when possible
+
+## Search Feature Implementation
+
+The search functionality in [src/pages/index.astro](mdc:src/pages/index.astro) includes:
+
+- Real-time filtering with `input` event listeners
+- TypeScript type assertions for DOM elements: `as HTMLInputElement`
+- Proper null checks and error handling
+- Data attributes for searchable content: `data-name`, `data-country`, `data-field`
+
+## Code Style
+
+- Use proper TypeScript type assertions: `as HTMLInputElement`
+- Include null checks: `if (!element) return;`
+- Use descriptive variable names
+- Keep functions focused and single-purpose
+- Use modern JavaScript features (arrow functions, const/let)
+
+## Performance Considerations
+
+- Use `loading="lazy"` for images below the fold
+- Minimize client-side JavaScript
+- Leverage Astro's static generation capabilities
+- Use CSS classes for styling instead of inline styles
+- Implement proper event delegation
+
+## TypeScript Guidelines
+
+- Always use type assertions for DOM elements
+- Include proper null checks before accessing properties
+- Use `NodeListOf<HTMLElement>` for querySelectorAll results
+- Handle optional properties with fallback values: `|| ''`
+
+## Search Implementation Details
+
+- Search is case-insensitive across name, country, and field
+- Real-time updates with `input` event listener
+- Clear button appears when search has content
+- Results counter shows filtered count
+- Proper focus management for accessibility
