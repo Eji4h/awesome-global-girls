@@ -1,11 +1,8 @@
 [
   {
-    "id": 1,
     "name": "Gal Gadot",
     "country": "Israel",
     "field": "Acting & Activism",
-    "description": "Actress, producer, and model known for her role as Wonder Woman and advocacy for women's empowerment",
-    "website": "https://en.wikipedia.org/wiki/Gal_Gadot",
     "href": "https://en.wikipedia.org/wiki/Gal_Gadot",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Gal_Gadot_for_Revlon.png"
   },
