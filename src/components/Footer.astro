@@ -1,0 +1,17 @@
+---
+export interface Props {
+  totalCount: number;
+}
+
+const { totalCount } = Astro.props;
+---
+
+<footer class="footer footer-center p-10 text-base-content mt-16">
+  <aside>
+    <p class="font-semibold">Made with ❤️ for Hacktoberfest 2025</p>
+    <p>
+      Total: <span class="badge badge-primary">{totalCount}</span> amazing
+      women featured
+    </p>
+  </aside>
+</footer>

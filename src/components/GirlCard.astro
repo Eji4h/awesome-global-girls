@@ -1,0 +1,46 @@
+---
+export interface Props {
+  name: string;
+  country: string;
+  field: string;
+  link: string;
+  image?: string;
+}
+
+const { name, country, field, link, image } = Astro.props;
+---
+
+<div
+  class="girl-card card card-compact bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-primary"
+  data-name={name.toLowerCase()}
+  data-country={country.toLowerCase()}
+  data-field={field.toLowerCase()}
+>
+  {image && (
+    <figure class="h-64">
+      <img
+        src={image}
+        alt={name}
+        class="w-full h-full object-scale-down"
+        loading="lazy"
+      />
+    </figure>
+  )}
+  <div class="card-body">
+    <h2 class="card-title text-primary">{name}</h2>
+    <div class="badge badge-secondary badge-outline gap-2">
+      📍 {country}
+    </div>
+    <p class="font-semibold">🎯 {field}</p>
+    <div class="card-actions justify-end mt-4">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary btn-sm"
+      >
+        🌟 Warp →
+      </a>
+    </div>
+  </div>
+</div>
