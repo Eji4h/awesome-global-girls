@@ -3,56 +3,9 @@
 [![Hacktoberfest 2025](https://img.shields.io/badge/Hacktoberfest-2025-blueviolet.svg)](https://hacktoberfest.com/)
 [![Astro](https://img.shields.io/badge/Built%20with-Astro-FF5D01.svg)](https://astro.build)
 
-A curated list of inspiring women from around the world making a difference in their fields. Built with Astro for Hacktoberfest 2025! 🎃
+A curated list of inspiring women from around the world making a difference in their fields. Built with Astro for Hacktoberfest! 🎃
 
 🌐 ** Website**: [awesome-global-girls.com](https://awesome-global-girls.com)
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or pnpm
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Eji4h/awesome-global-girls.git
-cd awesome-global-girls
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-pnpm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-# or
-pnpm dev
-```
-
-4. Open your browser and visit `http://localhost:4321`
-
-## 📁 Project Structure
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── data/
-│   │   └── girls.json      # The main data file with the list
-│   └── pages/
-│       └── index.astro     # Main page
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
 
 ## 🤝 Contributing
 
@@ -101,7 +54,7 @@ This project is open source and available under the MIT License.
 
 ## 🎃 Hacktoberfest
 
-This project is participating in Hacktoberfest 2025! Check out the [official Hacktoberfest website](https://hacktoberfest.com/) to learn more about contributing to open source.
+This project is participating in Hacktoberfest! Check out the [official Hacktoberfest website](https://hacktoberfest.com/) to learn more about contributing to open source.
 
 ## 📝 Available Scripts
 
@@ -111,4 +64,52 @@ This project is participating in Hacktoberfest 2025! Check out the [official Hac
 
 ---
 
-Made with ❤️ for Hacktoberfest 2025
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or pnpm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Eji4h/awesome-global-girls.git
+cd awesome-global-girls
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+4. Open your browser and visit `http://localhost:4321`
+
+## 📁 Project Structure
+
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── data/
+│   │   └── girls.json      # The main data file with the list
+│   └── pages/
+│       └── index.astro     # Main page
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+
+Made with ❤️ for Hacktoberfest
