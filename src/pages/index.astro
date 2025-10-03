@@ -1,0 +1,214 @@
+---
+import girlsData from '../data/girls.json';
+
+const pageTitle = 'Awesome Global Girls';
+const description = 'A curated list of inspiring women from around the world making a difference';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{pageTitle}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    :root {
+      --color-primary: #9333ea;
+      --color-secondary: #c084fc;
+      --color-background: #faf5ff;
+      --color-card: #ffffff;
+      --color-text: #1f2937;
+      --color-text-secondary: #6b7280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      margin: 1rem 0;
+      font-weight: 600;
+    }
+
+    .girls-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .girl-card {
+      background: var(--color-card);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid var(--color-primary);
+    }
+
+    .girl-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(147, 51, 234, 0.2);
+    }
+
+    .girl-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .country {
+      display: inline-block;
+      background: var(--color-background);
+      color: var(--color-primary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .field {
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 0.5rem 0;
+    }
+
+    .description {
+      color: var(--color-text-secondary);
+      margin: 1rem 0;
+    }
+
+    .link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: var(--color-secondary);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0;
+      margin-top: 4rem;
+      color: var(--color-text-secondary);
+    }
+
+    .contribute {
+      background: var(--color-card);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+      text-align: center;
+      border: 2px dashed var(--color-primary);
+    }
+
+    .contribute h3 {
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .girls-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌟 Awesome Global Girls</h1>
+      <span class="badge">Hacktoberfest 2025</span>
+      <p class="subtitle">{description}</p>
+    </header>
+
+    <div class="contribute">
+      <h3>🎃 Contributing to Hacktoberfest?</h3>
+      <p>Add more inspiring women to this list! Fork the repo, add entries to <code>src/data/girls.json</code>, and submit a PR.</p>
+    </div>
+
+    <main>
+      <div class="girls-grid">
+        {girlsData.map((girl) => (
+          <article class="girl-card">
+            <h2>{girl.name}</h2>
+            <span class="country">📍 {girl.country}</span>
+            <p class="field">🎯 {girl.field}</p>
+            <p class="description">{girl.description}</p>
+            <a href={girl.website} target="_blank" rel="noopener noreferrer" class="link">
+              Learn More →
+            </a>
+          </article>
+        ))}
+      </div>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ for Hacktoberfest 2025</p>
+      <p>Total: {girlsData.length} amazing women featured</p>
+    </footer>
+  </div>
+</body>
+</html>
+
