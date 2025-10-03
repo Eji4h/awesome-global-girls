@@ -10,10 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.14.1"
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^5.14.1",
+    "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.3",
+    "daisyui": "^5.1.26",
     "typescript": "^5.6.2"
   },
   "description": "A curated list of awesome global girls - Hacktoberfest 2025",
