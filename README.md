@@ -16,7 +16,7 @@ A curated list of inspiring women from around the world making a difference in t
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/awesome-global-girls.git
+git clone https://github.com/Eji4h/awesome-global-girls.git
 cd awesome-global-girls
 ```
 
@@ -61,11 +61,10 @@ We welcome contributions for Hacktoberfest! Here's how you can contribute:
 
 ```json
 {
-  "id": 6,
   "name": "Full Name",
   "country": "Country",
   "field": "Field of Work",
-  "href": "https://link-to-learn-more.com",
+  "link": "https://link-to-learn-more.com",
   "image": "https://example.com/image.jpg"
 }
 ```
@@ -81,7 +80,7 @@ git commit -m "Add [Name] to the list"
 
 - Add real, inspiring women who have made significant contributions
 - Provide accurate information
-- Include a reliable source link (href) - Wikipedia, official site, or credible source
+- Include a reliable source link (link) - Wikipedia, official site, or credible source
 - Add an image URL (preferably from Wikimedia Commons or other free sources)
 - Ensure the JSON is properly formatted
 - Image should be a direct link to the image file (jpg, png, webp)
@@ -89,8 +88,9 @@ git commit -m "Add [Name] to the list"
 ## 🛠️ Built With
 
 - [Astro](https://astro.build/) - The web framework
+- [Tailwind CSS](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
 - JSON for data storage
-- Pure CSS for styling
 
 ## 📜 License
 
