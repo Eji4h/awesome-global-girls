@@ -65,7 +65,6 @@ We welcome contributions for Hacktoberfest! Here's how you can contribute:
   "name": "Full Name",
   "country": "Country",
   "field": "Field of Work",
-  "description": "Short description of achievements",
   "href": "https://link-to-learn-more.com",
   "image": "https://example.com/image.jpg"
 }
@@ -84,7 +83,6 @@ git commit -m "Add [Name] to the list"
 - Provide accurate information
 - Include a reliable source link (href) - Wikipedia, official site, or credible source
 - Add an image URL (preferably from Wikimedia Commons or other free sources)
-- Keep descriptions concise (under 100 words)
 - Ensure the JSON is properly formatted
 - Image should be a direct link to the image file (jpg, png, webp)
 
