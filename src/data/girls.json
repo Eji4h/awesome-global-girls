@@ -1,10 +1,51 @@
 [
   {
-    "id": 1,
     "name": "Gal Gadot",
     "country": "Israel",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Gal_Gadot",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Gal_Gadot_for_Revlon.png"
+  },
+  {
+    "name": "Ariana Grande",
+    "country": "United States",
+    "field": "Music & Activism",
+    "href": "https://en.wikipedia.org/wiki/Ariana_Grande",
+    "image": "./images/Ariana_Grande.jpg"
+  },
+  {
+    "name": "Emma Watson",
+    "country": "United Kingdom",
+    "field": "Acting & Activism",
+    "href": "https://en.wikipedia.org/wiki/Emma_Watson",
+    "image": "./images/Emma_Watson.jpg"
+  },
+  {
+    "name": "Zendaya",
+    "country": "United States",
+    "field": "Acting & Activism",
+    "href": "https://en.wikipedia.org/wiki/Zendaya",
+    "image": "./images/Zendaya.jpg"
+  },
+  {
+    "name": "Priyanka Chopra",
+    "country": "India",
+    "field": "Acting & Activism",
+    "href": "https://en.wikipedia.org/wiki/Priyanka_Chopra",
+    "image": "./images/Priyanka_Chopra.jpg"
+  },
+  {
+    "name": "Emma Stone",
+    "country": "United States",
+    "field": "Acting & Activism",
+    "href": "https://en.wikipedia.org/wiki/Emma_Stone",
+    "image": "./images/Emma_Stone.jpg"
+  },
+  {
+    "name": "Natalie Portman",
+    "country": "United States",
+    "field": "Acting & Activism",
+    "href": "https://en.wikipedia.org/wiki/Natalie_Portman",
+    "image": "./images/Natalie_Portman.jpg"
   }
 ]
