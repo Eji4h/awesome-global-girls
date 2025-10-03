@@ -1,0 +1,56 @@
+---
+description: Guidelines for managing the girls.json data file and adding new entries
+---
+
+# Data Management Guidelines
+
+## Adding New Entries to girls.json
+
+When adding new inspiring women to [src/data/girls.json](mdc:src/data/girls.json):
+
+### Required Fields
+
+- `name`: Full name (e.g., "Emma Watson")
+- `country`: Country of origin (e.g., "United Kingdom")
+- `field`: Professional field (e.g., "Acting & Activism")
+- `href`: Wikipedia or reference URL
+
+### Optional Fields
+
+- `image`: Path to image file (e.g., "/images/Emma_Watson.jpg")
+
+### Data Quality Standards
+
+- Use proper capitalization for names and countries
+- Be consistent with field descriptions
+- Ensure all URLs are valid and accessible
+- Use descriptive field names (e.g., "Acting & Activism" not just "Acting")
+
+### Image Guidelines
+
+- Store images in `/public/images/` directory
+- Use descriptive filenames (e.g., "Emma_Watson.jpg")
+- Optimize images for web use
+- Use consistent naming convention: `FirstName_LastName.jpg`
+
+### JSON Structure
+
+```json
+{
+  "name": "Full Name",
+  "country": "Country Name",
+  "field": "Professional Field",
+  "href": "https://reference-url.com",
+  "image": "/images/Image_Name.jpg"
+}
+```
+
+### Search Compatibility
+
+The search feature automatically searches across:
+
+- Name (case-insensitive)
+- Country (case-insensitive)
+- Field (case-insensitive)
+
+Ensure data is properly formatted for optimal search results.

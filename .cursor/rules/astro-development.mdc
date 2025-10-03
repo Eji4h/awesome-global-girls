@@ -1,0 +1,35 @@
+---
+globs: *.astro,*.ts,*.js
+---
+
+# Astro Development Guidelines
+
+## Astro Component Best Practices
+
+- Use proper TypeScript types for component props
+- Keep client-side scripts minimal and focused
+- Use Astro's built-in Image component for optimized images
+- Prefer server-side rendering when possible
+
+## Search Feature Implementation
+
+The search functionality in [src/pages/index.astro](mdc:src/pages/index.astro) includes:
+
+- Real-time filtering with `input` event listeners
+- TypeScript type assertions for DOM elements
+- Proper null checks and error handling
+- Data attributes for searchable content
+
+## Code Style
+
+- Use proper TypeScript type assertions: `as HTMLInputElement`
+- Include null checks: `if (!element) return;`
+- Use descriptive variable names
+- Keep functions focused and single-purpose
+
+## Performance Considerations
+
+- Use `loading="lazy"` for images below the fold
+- Minimize client-side JavaScript
+- Leverage Astro's static generation capabilities
+- Use CSS classes for styling instead of inline styles

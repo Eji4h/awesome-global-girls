@@ -1,0 +1,52 @@
+---
+globs: *.astro,*.css,*.html
+---
+
+# Styling and UI Guidelines
+
+## Design System
+
+This project uses DaisyUI with Tailwind CSS for consistent styling.
+
+### Color Scheme
+
+- Primary: Purple gradient (`from-purple-700 to-purple-400`)
+- Base: Light theme (`data-theme="light"`)
+- Background: `bg-base-200` for main background
+- Cards: `bg-base-100` with `shadow-xl`
+
+### Component Guidelines
+
+#### Search Component
+
+- Use `input input-bordered input-lg` for search input
+- Include search icon with proper positioning
+- Show/hide clear button based on input state
+- Display results count with `text-base-content/70`
+
+#### Card Layout
+
+- Use `card card-compact` for consistent sizing
+- Apply `hover:shadow-2xl transition-all duration-300` for interactions
+- Use `border-t-4 border-primary` for accent
+- Maintain responsive grid: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`
+
+#### Typography
+
+- Headers: Use gradient text with `bg-clip-text text-transparent`
+- Body text: Use `text-base-content/70` for secondary text
+- Badges: Use `badge badge-primary` for highlights
+
+### Responsive Design
+
+- Mobile-first approach
+- Breakpoints: `sm:`, `md:`, `lg:`
+- Flexible grid system
+- Proper spacing with `px-4 sm:px-8`
+
+### Accessibility
+
+- Use semantic HTML elements
+- Include proper `alt` attributes for images
+- Ensure sufficient color contrast
+- Use descriptive button text and titles
