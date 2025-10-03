@@ -13,6 +13,7 @@ This is an Astro-based project showcasing inspiring women from around the world 
 - [src/styles/global.css](mdc:src/styles/global.css) - Global styles
 - [astro.config.mjs](mdc:astro.config.mjs) - Astro configuration
 - [tailwind.config.js](mdc:tailwind.config.js) - Tailwind CSS configuration
+- [package.json](mdc:package.json) - Project dependencies
 
 ## Project Features
 
@@ -20,6 +21,7 @@ This is an Astro-based project showcasing inspiring women from around the world 
 - **Responsive Design**: Uses DaisyUI components with Tailwind CSS
 - **Data-driven**: Content is loaded from JSON file
 - **Accessibility**: Proper semantic HTML and ARIA attributes
+- **TypeScript Support**: Full TypeScript integration with proper type assertions
 
 ## Data Structure
 
@@ -30,6 +32,14 @@ Each entry in [src/data/girls.json](mdc:src/data/girls.json) should have:
 - `field`: Professional field/industry
 - `href`: Wikipedia or reference link
 - `image`: Path to image file (optional)
+
+## Technology Stack
+
+- **Framework**: Astro 5.14.1
+- **Styling**: Tailwind CSS 4.1.14 + DaisyUI 5.1.26
+- **Language**: TypeScript 5.6.2
+- **Linting**: ESLint with Astro plugin
+- **Package Manager**: pnpm
 
 ## Styling Guidelines
 

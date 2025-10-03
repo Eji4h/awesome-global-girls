@@ -46,6 +46,21 @@ This project is designed for Hacktoberfest 2025 contributions. Here's how to add
 - Follow the project's coding standards
 - Include a brief description of the person being added
 
+### Current Project Status
+
+- **Total Entries**: 13 inspiring women
+- **Countries Represented**: United States, United Kingdom, Israel, India
+- **Fields Covered**: Acting & Activism, Music & Activism, Model & Activism
+- **Search Feature**: Fully functional with real-time filtering
+
 ### Recognition
 
 Contributors will be recognized in the project's README and commit history. This is a community effort to celebrate inspiring women worldwide!
+
+### Development Setup
+
+- **Framework**: Astro 5.14.1
+- **Styling**: Tailwind CSS + DaisyUI
+- **Package Manager**: pnpm
+- **Linting**: ESLint with TypeScript support
+- **Scripts**: `pnpm dev`, `pnpm build`, `pnpm lint`

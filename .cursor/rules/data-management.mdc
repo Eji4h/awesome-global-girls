@@ -32,6 +32,7 @@ When adding new inspiring women to [src/data/girls.json](mdc:src/data/girls.json
 - Use descriptive filenames (e.g., "Emma_Watson.jpg")
 - Optimize images for web use
 - Use consistent naming convention: `FirstName_LastName.jpg`
+- Support both local images (`/images/name.jpg`) and external URLs
 
 ### JSON Structure
 
@@ -54,3 +55,21 @@ The search feature automatically searches across:
 - Field (case-insensitive)
 
 Ensure data is properly formatted for optimal search results.
+
+### Current Data Examples
+
+- **Acting & Activism**: Emma Watson, Gal Gadot, Zendaya
+- **Music & Activism**: Ariana Grande
+- **Model & Activism**: Emily Ratajkowski, Jennifer Lawrence
+- **Countries**: United States, United Kingdom, Israel, India
+
+### Field Categories
+
+- Acting & Activism
+- Music & Activism
+- Model & Activism
+- Science & Technology
+- Business & Leadership
+- Arts & Culture
+- Sports & Athletics
+- Activism & Social Change
