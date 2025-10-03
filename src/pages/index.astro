@@ -4,87 +4,220 @@ import girlsData from '../data/girls.json';
 import '../styles/global.css';
 
 const pageTitle = 'Awesome Global Girls';
-const description = 'A curated list of inspiring women from around the world making a difference';
+const description =
+  'A curated list of inspiring women from around the world making a difference';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content={description}>
-  <title>{pageTitle}</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-</head>
-<body class="bg-base-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8">
-    <header class="text-center py-12 mb-8">
-      <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-700 to-purple-400 bg-clip-text text-transparent mb-4">
-        🌟 Awesome Global Girls
-      </h1>
-      <div class="badge badge-primary badge-lg my-4">Hacktoberfest 2025</div>
-      <p class="text-xl text-base-content/70 max-w-2xl mx-auto">
-        {description}
-      </p>
-    </header>
-
-    <div class="alert alert-info shadow-lg my-12">
-      <div class="text-center w-full">
-        <h3 class="text-2xl font-bold mb-2">🎃 Contributing to Hacktoberfest?</h3>
-        <p>
-          Add more inspiring women to this list! Fork the repo, add entries to 
-          <code class="badge badge-ghost">src/data/girls.json</code>, and submit a PR.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-base-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+      <header class="text-center py-12 mb-8">
+        <h1
+          class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-700 to-purple-400 bg-clip-text text-transparent mb-4"
+        >
+          🌟 Awesome Global Girls
+        </h1>
+        <div class="badge badge-primary badge-lg my-4">Hacktoberfest 2025</div>
+        <p class="text-xl text-base-content/70 max-w-2xl mx-auto">
+          {description}
         </p>
+      </header>
+
+      <div class="alert alert-info shadow-lg my-12">
+        <div class="text-center w-full">
+          <h3 class="text-2xl font-bold mb-2">
+            🎃 Contributing to Hacktoberfest?
+          </h3>
+          <p>
+            Add more inspiring women to this list! Fork the repo, add entries to
+            <code class="badge badge-ghost">src/data/girls.json</code>, and
+            submit a PR.
+          </p>
+        </div>
       </div>
+
+      <!-- Search Section -->
+      <div class="search-section mb-8">
+        <div class="max-w-2xl mx-auto">
+          <div class="relative">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by name, country, or field..."
+              class="input input-bordered input-lg w-full pr-12 pl-12"
+            />
+            <svg
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-base-content/50"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <button
+              id="clearSearch"
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 btn btn-ghost btn-sm hidden"
+              title="Clear search"
+            >
+              ✕
+            </button>
+          </div>
+          <div
+            id="searchResults"
+            class="mt-4 text-center text-sm text-base-content/70 hidden"
+          >
+            <span id="resultCount">0</span> results found
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <div
+          id="girlsGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
+        >
+          {
+            girlsData.map((girl, index) => (
+              <div
+                class="girl-card card card-compact bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-primary"
+                data-name={girl.name.toLowerCase()}
+                data-country={girl.country.toLowerCase()}
+                data-field={girl.field.toLowerCase()}
+              >
+                {girl.image && (
+                  <figure class="h-64">
+                    <img
+                      src={girl.image}
+                      alt={girl.name}
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                )}
+                <div class="card-body">
+                  <h2 class="card-title text-primary">{girl.name}</h2>
+                  <div class="badge badge-secondary badge-outline gap-2">
+                    📍 {girl.country}
+                  </div>
+                  <p class="font-semibold">🎯 {girl.field}</p>
+                  <div class="card-actions justify-end mt-4">
+                    <a
+                      href={girl.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-primary btn-sm"
+                    >
+                      Learn More →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </main>
+
+      <footer class="footer footer-center p-10 text-base-content mt-16">
+        <aside>
+          <p class="font-semibold">Made with ❤️ for Hacktoberfest 2025</p>
+          <p>
+            Total: <span class="badge badge-primary">{girlsData.length}</span> amazing
+            women featured
+          </p>
+        </aside>
+      </footer>
     </div>
 
-    <main>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        {girlsData.map((girl) => (
-          <div class="card card-compact bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-primary">
-            {girl.image && (
-              <figure class="h-64">
-                <img 
-                  src={girl.image} 
-                  alt={girl.name}
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </figure>
-            )}
-            <div class="card-body">
-              <h2 class="card-title text-primary">
-                {girl.name}
-              </h2>
-              <div class="badge badge-secondary badge-outline gap-2">
-                📍 {girl.country}
-              </div>
-              <p class="font-semibold">
-                🎯 {girl.field}
-              </p>
-              <div class="card-actions justify-end mt-4">
-                <a 
-                  href={girl.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  class="btn btn-primary btn-sm"
-                >
-                  Learn More →
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </main>
+    <script>
+      // Search functionality
+      const searchInput = document.getElementById(
+        'searchInput'
+      ) as HTMLInputElement;
+      const clearButton = document.getElementById(
+        'clearSearch'
+      ) as HTMLButtonElement;
+      const searchResults = document.getElementById(
+        'searchResults'
+      ) as HTMLDivElement;
+      const resultCount = document.getElementById(
+        'resultCount'
+      ) as HTMLSpanElement;
+      const girlsGrid = document.getElementById('girlsGrid') as HTMLDivElement;
+      const girlCards = document.querySelectorAll(
+        '.girl-card'
+      ) as NodeListOf<HTMLElement>;
+      const totalGirls = girlCards.length;
 
-    <footer class="footer footer-center p-10 text-base-content mt-16">
-      <aside>
-        <p class="font-semibold">Made with ❤️ for Hacktoberfest 2025</p>
-        <p>Total: <span class="badge badge-primary">{girlsData.length}</span> amazing women featured</p>
-      </aside>
-    </footer>
-  </div>
-</body>
+      function performSearch() {
+        if (!searchInput || !clearButton || !searchResults || !resultCount)
+          return;
+
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        if (searchTerm === '') {
+          // Show all cards
+          girlCards.forEach((card) => {
+            card.style.display = 'block';
+          });
+          searchResults.classList.add('hidden');
+          clearButton.classList.add('hidden');
+          return;
+        }
+
+        let visibleCount = 0;
+
+        girlCards.forEach((card) => {
+          const name = card.dataset.name || '';
+          const country = card.dataset.country || '';
+          const field = card.dataset.field || '';
+
+          const matches =
+            name.includes(searchTerm) ||
+            country.includes(searchTerm) ||
+            field.includes(searchTerm);
+
+          if (matches) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update results display
+        resultCount.textContent = visibleCount.toString();
+        searchResults.classList.remove('hidden');
+        clearButton.classList.remove('hidden');
+      }
+
+      function clearSearch() {
+        if (!searchInput) return;
+        searchInput.value = '';
+        performSearch();
+        searchInput.focus();
+      }
+
+      // Event listeners
+      if (searchInput) {
+        searchInput.addEventListener('input', performSearch);
+        searchInput.focus();
+      }
+
+      if (clearButton) {
+        clearButton.addEventListener('click', clearSearch);
+      }
+    </script>
+  </body>
 </html>
-
