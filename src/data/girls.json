@@ -11,83 +11,83 @@
     "country": "United States",
     "field": "Music & Activism",
     "href": "https://en.wikipedia.org/wiki/Ariana_Grande",
-    "image": "./images/Ariana_Grande.jpg"
+    "image": "/images/Ariana_Grande.jpg"
   },
   {
     "name": "Emma Watson",
     "country": "United Kingdom",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Emma_Watson",
-    "image": "./images/Emma_Watson.jpg"
+    "image": "/images/Emma_Watson.jpg"
   },
   {
     "name": "Zendaya",
     "country": "United States",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Zendaya",
-    "image": "./images/Zendaya.jpg"
+    "image": "/images/Zendaya.jpg"
   },
   {
     "name": "Priyanka Chopra",
     "country": "India",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Priyanka_Chopra",
-    "image": "./images/Priyanka_Chopra.jpg"
+    "image": "/images/Priyanka_Chopra.jpg"
   },
   {
     "name": "Emma Stone",
     "country": "United States",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Emma_Stone",
-    "image": "./images/Emma_Stone.jpg"
+    "image": "/images/Emma_Stone.jpg"
   },
   {
     "name": "Natalie Portman",
     "country": "United States",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Natalie_Portman",
-    "image": "./images/Natalie_Portman.jpg"
+    "image": "/images/Natalie_Portman.jpg"
   },
   {
     "name": "Emily Ratajkowski",
     "country": "United States",
     "field": "Model & Activism",
     "href": "https://en.wikipedia.org/wiki/Emily_Ratajkowski",
-    "image": "./images/Emily Ratajkowski.jpg"
+    "image": "/images/Emily Ratajkowski.jpg"
   },
   {
     "name": "Jennifer Lawrence",
     "country": "United States",
     "field": "Model & Activism",
     "href": "https://en.wikipedia.org/wiki/Jennifer_Lawrence",
-    "image": "./images/Jennifer_Lawrence.jpg"
+    "image": "/images/Jennifer_Lawrence.jpg"
   },
   {
     "name": "Scarlett Johansson",
     "country": "United States",
     "field": "Model & Activism",
     "href": "https://en.wikipedia.org/wiki/Scarlett_Johansson",
-    "image": "./images/Scarlett_Johansson.jpg"
+    "image": "/images/Scarlett_Johansson.jpg"
   },
   {
     "name": "Anne Hathaway",
     "country": "United States",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Anne_Hathaway",
-    "image": "./images/Anne_Hathaway.jpg"
+    "image": "/images/Anne_Hathaway.jpg"
   },
   {
     "name": "Kate Winslet",
     "country": "United Kingdom",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Kate_Winslet",
-    "image": "./images/Kate_Winslet.jpg"
+    "image": "/images/Kate_Winslet.jpg"
   },
   {
     "name": "Keira Knightley",
     "country": "United Kingdom",
     "field": "Acting & Activism",
     "href": "https://en.wikipedia.org/wiki/Keira_Knightley",
-    "image": "./images/Keira_Knightley.jpg"
+    "image": "/images/Keira_Knightley.jpg"
   }
 ]
