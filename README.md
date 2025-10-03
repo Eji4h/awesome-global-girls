@@ -19,27 +19,41 @@ We welcome contributions for Hacktoberfest! Here's how you can contribute:
   "name": "Full Name",
   "country": "Country",
   "field": "Field of Work",
-  "link": "https://link-to-learn-more.com",
-  "image": "https://example.com/image.jpg"
+  "link": "https://link-to-image.com",
+  "image": "/images/Full_Name.jpg"
 }
 ```
 
-3. **Commit** your changes:
+3. **Add an image** (optional but recommended):
+   - Find a high-quality image of the person
+   - Save the image to the `public/images/` directory
+   - Use a descriptive filename: `FirstName_LastName.jpg` (e.g., `Marie_Curie.jpg`)
+   - Supported formats: jpg, png, webp
+   - Add the image path to the `image` field in your JSON entry
+   - Example: `"image": "/images/Marie_Curie.jpg"`
+
+4. **Commit** your changes:
 ```bash
 git commit -m "Add [Name] to the list"
 ```
 
-4. **Push** to your fork and submit a **Pull Request**
+5. **Push** to your fork and submit a **Pull Request**
 
 ### Contribution Guidelines
 
 - Add real, inspiring women who have made significant contributions
 - Provide accurate information
 - Include a reliable source link (link) - Wikipedia, official site, or credible source
-- Add an image URL (preferably from Wikimedia Commons or other free sources)
+- **Image Requirements:**
+  - Save images to the `public/images/` directory
+  - Use descriptive filenames: `FirstName_LastName.jpg` format
+  - Supported formats: jpg, png, webp
+  - Use high-quality images (at least 200x200 pixels recommended)
+  - Ensure the image is properly licensed for use
+  - Avoid copyrighted images without permission
+  - Reference the image in JSON as: `"/images/FirstName_LastName.jpg"`
 - Ensure the JSON is properly formatted
-- Ensure sort name is in alphabetical order
-- Image should be a direct link to the image file (jpg, png, webp)
+- Ensure entries are sorted in alphabetical order by name
 
 ## 🛠️ Built With
 
@@ -100,7 +114,8 @@ pnpm dev
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── images/             # Directory for contributor images
 ├── src/
 │   ├── data/
 │   │   └── girls.json      # The main data file with the list
