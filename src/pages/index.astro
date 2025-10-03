@@ -86,7 +86,7 @@ const description =
       <main>
         <div
           id="girlsGrid"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8"
         >
           {
             girlsData.map((girl, index) => (
@@ -101,7 +101,7 @@ const description =
                     <img
                       src={girl.image}
                       alt={girl.name}
-                      class="w-full h-full object-cover"
+                      class="w-full h-full object-scale-down"
                       loading="lazy"
                     />
                   </figure>
