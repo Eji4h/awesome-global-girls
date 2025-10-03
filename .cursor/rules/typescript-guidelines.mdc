@@ -1,0 +1,66 @@
+---
+globs: *.ts,*.astro
+---
+
+# TypeScript Guidelines
+
+## Type Safety Best Practices
+
+- Always use type assertions for DOM elements: `as HTMLInputElement`
+- Include proper null checks before accessing properties
+- Use `NodeListOf<HTMLElement>` for querySelectorAll results
+- Handle optional properties with fallback values: `|| ''`
+
+## DOM Element Handling
+
+```typescript
+// Good: Proper type assertion with null check
+const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+if (!searchInput) return;
+
+// Good: Safe property access
+const value = searchInput.value.toLowerCase().trim();
+
+// Good: Safe dataset access
+const name = card.dataset.name || '';
+```
+
+## Event Handling
+
+- Use proper event listener types
+- Include null checks for event targets
+- Handle optional properties safely
+
+## Search Implementation Types
+
+```typescript
+// DOM element type assertions
+const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+const clearButton = document.getElementById('clearSearch') as HTMLButtonElement;
+const searchResults = document.getElementById(
+  'searchResults'
+) as HTMLDivElement;
+const resultCount = document.getElementById('resultCount') as HTMLSpanElement;
+const girlCards = document.querySelectorAll(
+  '.girl-card'
+) as NodeListOf<HTMLElement>;
+
+// Function parameter types
+function performSearch(): void {
+  if (!searchInput || !clearButton || !searchResults || !resultCount) return;
+  // Implementation
+}
+```
+
+## Error Prevention
+
+- Always check for null/undefined before property access
+- Use optional chaining where appropriate
+- Provide fallback values for optional properties
+- Use proper type guards for DOM elements
+
+## Astro Component Types
+
+- Use proper imports for Astro components
+- Handle component props with TypeScript interfaces
+- Use Astro's built-in type definitions

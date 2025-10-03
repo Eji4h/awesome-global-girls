@@ -1,0 +1,49 @@
+---
+alwaysApply: true
+---
+
+# Awesome Global Girls Project Structure
+
+This is an Astro-based project showcasing inspiring women from around the world for Hacktoberfest 2025.
+
+## Key Files
+
+- [src/pages/index.astro](mdc:src/pages/index.astro) - Main page with search functionality
+- [src/data/girls.json](mdc:src/data/girls.json) - JSON data file containing women's information
+- [src/styles/global.css](mdc:src/styles/global.css) - Global styles
+- [astro.config.mjs](mdc:astro.config.mjs) - Astro configuration
+- [tailwind.config.js](mdc:tailwind.config.js) - Tailwind CSS configuration
+- [package.json](mdc:package.json) - Project dependencies
+
+## Project Features
+
+- **Search Functionality**: Real-time search across name, country, and field
+- **Responsive Design**: Uses DaisyUI components with Tailwind CSS
+- **Data-driven**: Content is loaded from JSON file
+- **Accessibility**: Proper semantic HTML and ARIA attributes
+- **TypeScript Support**: Full TypeScript integration with proper type assertions
+
+## Data Structure
+
+Each entry in [src/data/girls.json](mdc:src/data/girls.json) should have:
+
+- `name`: Full name of the person
+- `country`: Country of origin
+- `field`: Professional field/industry
+- `href`: Wikipedia or reference link
+- `image`: Path to image file (optional)
+
+## Technology Stack
+
+- **Framework**: Astro 5.14.1
+- **Styling**: Tailwind CSS 4.1.14 + DaisyUI 5.1.26
+- **Language**: TypeScript 5.6.2
+- **Linting**: ESLint with Astro plugin
+- **Package Manager**: pnpm
+
+## Styling Guidelines
+
+- Use DaisyUI components for consistency
+- Follow the existing purple gradient theme
+- Maintain responsive grid layout
+- Use proper semantic HTML structure
